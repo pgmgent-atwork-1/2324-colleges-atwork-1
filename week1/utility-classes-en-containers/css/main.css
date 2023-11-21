@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+/*
+
+Utility classes
+
+*/
+
+.container {
+    width: 90%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.cols {
+    display: flex;
+}
+
+.cols--sb {
+    justify-content: space-between;
+}
+
+.cols--aic {
+    align-items: center;
+}
+
+.mt-m {
+    margin-top: 5rem;
+}
+
+.mt-l {
+    margin-top: 8rem;
+}
+
+.pd-m {
+    padding: 3rem 0;
+}
+
+/*
+
+Header
+
+*/
+
+header {
+    background: hsl(0, 0%, 90%);
+    padding: 1rem 0;
+}
+
+header .logo img {
+    width: 5rem;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li.btn a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: tomato;
+    text-decoration: none;
+    color: white;
+    border-radius: 3rem;
+}
+
+header nav ul li.btn a:hover {
+    background-color: hsl(9, 100%, 54%);
+}
+
+header nav ul li.btn a:active {
+    transform: translateY(.0625rem);
+}
+
+
+/*
+
+Blog section
+
+*/
+
+.blog {
+    background-color: black;
+    color: white;
+}
