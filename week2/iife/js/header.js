@@ -1,4 +1,4 @@
-// IIFE
+// IIFE: Immediately Invoked Function Expression
 (() => {
   const buildUI = () => {};
 
