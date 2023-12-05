@@ -4,9 +4,7 @@
   const generateHTMLForBoxes = (boxes) => {
     let html = "";
     for (const box of boxes) {
-      html += `
-        <div class="box" style="left: ${box.x}; top: ${box.y}"></div>
-      `;
+      html += `<div class="box" style="left: ${box.x}; top: ${box.y};"></div>`;
     }
     return html;
   };

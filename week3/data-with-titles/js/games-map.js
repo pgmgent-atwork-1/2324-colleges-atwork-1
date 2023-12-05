@@ -16,28 +16,16 @@
           <li>
             <h2>${type}</h2>
             <ul>
-              ${generateHTMLForGames(gamesByType)}
+              ${generateHTMLForGames(
+                games.filter((game) => {
+                  return game.type === type;
+                })
+              )}
             </ul>
           </li>
       `;
       })
       .join("");
-
-    let html = "";
-    for (const type of types) {
-      const gamesByType = games.filter((game) => {
-        return game.type === type;
-      });
-
-      html += `
-      <li>
-        <h2>${type}</h2>
-        <ul>
-          ${generateHTMLForGames(gamesByType)}
-        </ul>
-      </li>`;
-    }
-    return html;
   };
 
   const buildUI = () => {

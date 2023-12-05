@@ -12,23 +12,23 @@
   };
 
   const generateHTMLForCategories = (games) => {
-    // stap 1: categorieën zoeken
-    const types = ["rpg", "racing", "sports", "fps"];
+    // tip: begin eerst met een hardcoded array
+    const types = ["rpg", "sports", "fps", "racing"];
 
-    // stap 2: categorieën loopen
     let html = "";
     for (const type of types) {
-      const gamesByType = games.filter((game) => {
+      const filteredGames = games.filter((game) => {
         return game.type === type;
       });
 
       html += `
-      <li>
-        <h2>${type}</h2>
-        <ul>
-          ${generateHTMLForGames(gamesByType)}
-        </ul>
-      </li>`;
+        <li>
+          <h2>${type}</h2>
+          <ul>
+            ${generateHTMLForGames(filteredGames)}
+          </ul>
+        </li>
+      `;
     }
     return html;
   };
