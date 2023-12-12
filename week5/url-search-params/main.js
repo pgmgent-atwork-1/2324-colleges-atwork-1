@@ -1,7 +1,8 @@
 (() => {
   const initialize = () => {
-    const query = window.location.search;
-    const params = new URLSearchParams(query);
+    const search = window.location.search;
+    console.log(search);
+    const params = new URLSearchParams(search);
     console.log(params.get("day"));
   };
 
