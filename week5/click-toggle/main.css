@@ -1,0 +1,37 @@
+.boxes-container {
+  background: #eee;
+  width: 100%;
+  padding: 4rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.boxes-container__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  color: #999;
+  transition: all 0.3s ease-in-out;
+}
+
+.boxes-container__item {
+  background-color: red;
+  margin: 1rem 2rem;
+  width: 4rem;
+  height: 4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.boxes-container--dark {
+  background: black;
+}
+
+.boxes-container--dark .boxes-container__title {
+  color: #fff;
+}
+
+.boxes-container--dark .boxes-container__item {
+  background-color: white;
+  border-radius: 50%;
+}
