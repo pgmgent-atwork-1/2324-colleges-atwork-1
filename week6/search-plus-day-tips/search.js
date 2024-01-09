@@ -7,6 +7,11 @@
     if (search) {
       console.log("searching for: " + search);
       $searchInput.value = search;
+
+      // stap 1: events fetchen
+      // stap 2: events filteren obv zoekterm
+    } else {
+      // todo
     }
   };
 

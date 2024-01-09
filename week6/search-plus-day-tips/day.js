@@ -6,7 +6,10 @@
     let html = "";
     for (const event of events) {
       html += `
-        <li>${event.title}</li>
+        <li>
+          <img src="${event.image ? event.image.thumb : "/static/img/placeholder.jpg"}" /> 
+          ${event.title}
+        </li>
       `;
     }
     return html;
@@ -30,7 +33,9 @@
   const generateHTMLForCategoryLinks = (categories) => {
     let html = "";
     for (const category of categories) {
-      html += `<li><a href="#">${category}</a></li>`;
+      html += `
+        <li><a href="#">${category}</a></li>
+      `;
     }
     $categories.innerHTML = html;
   };
@@ -54,7 +59,7 @@
   };
 
   const initialize = () => {
-    fetchData();
+    fetchData(); // asynchroon!
   };
 
   initialize();
